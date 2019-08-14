@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ardoise Magique - Projet 3WA</title>
+</head>
+
+<body>
+    <h1>Ardoise Magique !</h1>
+    <canvas id="canvas" style="border: 2px solid black" width="640" height="480"></canvas>
+<ul>
+    <li>
+        Outils : 
+        <button class="eraser"><i class="fas fa-eraser"></i></button>
+        <input type="color" name="colors" id="colors">
+        <button class="reset"><i class="fas fa-trash"></i></button>
+    </li>
+
+    <li class="color">
+        Couleur : 
+        <input type="button" class="black" value="    ">
+        <input type="button" class="brown" value="    ">
+        <input type="button" class="red" value="    ">
+        <input type="button" class="yellow" value="    ">
+        <input type="button" class="green" value="    ">
+        <input type="button" class="cyan" value="    ">
+        <input type="button" class="blue" value="    ">
+    </li>
+    <li>
+        Epaisseur : 
+        <input type="button" class="fin" value="Fin">
+        <input type="button" class="normal" value="Normal">
+        <input type="button" class="epais" value="Epais">
+        <input type="button" class="tresEpais" value="TRES EPAIS">
+    </li>
+</ul>
+
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src="js/cursor/jquery.awesome-cursor.min.js"></script>
+    <script src="js/class/pen.class.js"></script>
+    <script src="js/size.js"></script>
+    <script src="js/color.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+#colorPalette {
+    display: none;
+}
+
+li {
+    margin: 20px;
+}
+
+.color input {
+    border-radius: 100%;
+    padding: 10px;
+    border: none;
+}
+
+.color .black {
+    background-color: black;
+}
+
+.color .brown {
+    background-color: brown;
+}
+
+.color .red {
+    background-color: red;
+}
+
+.color .yellow {
+    background-color: yellow;
+}
+
+.color .green {
+    background-color: green;
+}
+
+.color .cyan {
+    background-color: cyan;
+}
+
+.color .blue {
+    background-color: blue;
+}
+
+
+
+#canvas:hover {
+    cursor: url('paint-brush-solid.svg')-10 30, auto;
+}

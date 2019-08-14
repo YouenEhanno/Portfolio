@@ -1,0 +1,597 @@
+/*========================================
+                GENERAL
+=========================================*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+    color: #fff;
+}
+
+* li {
+    list-style: none;
+}
+
+* hr {
+    margin: 0 auto;
+    border: solid 1px #ec9430;    
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #ec9430;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #ec9430;
+}
+
+header,
+main #galerie,
+main #menus,
+main #events,
+main #contact,
+h2,
+footer {
+    background-color: #0d1214;
+}
+
+/*========================================
+                HEADER
+=========================================*/
+
+/*----logo----*/
+
+header img {
+    width: 150px;
+    position: relative;
+    background: #0d1214;
+    border-radius: 10%;
+    border: solid 2px #165c3a;
+    margin-bottom: -120px;
+}
+
+
+/*----.language----*/
+
+header .language {
+    margin: 35px 20px;
+}
+
+header .language a:hover {
+    color: #fff;
+}
+
+
+/*----.onepage----*/
+
+header .onepage {
+    width: 100%;
+    margin: 0 auto;
+    background: #0d1214;
+}
+
+header .onepage ul {
+    margin: auto;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+header #navigation {
+    margin: -30px 0;
+}
+
+header #navigation #navbarText ul .galerie,
+header #navigation #navbarText ul .events,
+header #navigation #navbarText ul .contact
+{
+    padding: 0 20px;
+    margin: 0 60px;
+    margin-top: 20px;
+}
+header #navigation #navbarText ul .menus {
+    padding: 0 20px;
+    margin: 20px 60px 0 0;
+}
+
+@media screen and (max-width: 1400px) {
+
+    header #navigation #navbarText ul .galerie,
+    header #navigation #navbarText ul .events,
+    header #navigation #navbarText ul .contact
+    {
+        padding: 0 10px;
+        margin: 0 40px;
+    }
+    header #navigation #navbarText ul .menus {
+        padding: 0 10px;
+        margin: 0 40px 0 0;
+    }
+}
+@media screen and (max-width: 1150px) {
+
+    header #navigation #navbarText ul .galerie,
+    header #navigation #navbarText ul .events,
+    header #navigation #navbarText ul .contact
+    {
+        padding: 0 10px;
+        margin: 0 20px;
+    }
+    header #navigation #navbarText ul .menus {
+        padding: 0 10px;
+        margin: 0 20px 0 0;
+    }
+}
+
+
+header #navigation #navbarText ul .galerie:hover,
+header #navigation #navbarText ul .menus:hover,
+header #navigation #navbarText ul .events:hover,
+header #navigation #navbarText ul .contact:hover
+{
+    
+    border-bottom: solid 4px #165c3a;
+    color: #ec9430;
+}
+
+header .onepage ul li a {
+    padding: 5px;
+    
+}
+
+/*========================================
+                MAIN
+=========================================*/
+
+/*----général----*/
+
+main {
+    text-align: center;
+}
+
+main h1 {
+    
+    text-align: center;
+    font-family: Celtic;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 5rem;
+    margin: 0;
+}
+
+main h2 {
+    margin: 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+main #menus {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+main #onepageEvents h2,
+main #onepageGalerie h2
+{
+    padding-top: 40px;
+    text-transform: uppercase;
+}
+
+main #onepageEvents h2::before,
+main #onepageGalerie h2::before {
+    content: '• ';
+    color: #ec9430;
+}
+main #onepageEvents h2::after,
+main #onepageGalerie h2::after {
+    content: ' •';
+    color: #ec9430;
+}
+
+main #onepageEvents,
+main #onepageGalerie {
+    padding-top: 140px;
+    background: #0d1214;
+}
+
+
+main #events,
+main #galerie {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+main iframe {
+    width: 100%;
+}
+
+
+/*----#home----*/
+
+main #home {
+    padding: 250px 0 150px;
+    background-image: url(../img/bar_fond.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 35%;
+    text-shadow: 2px 1px 1px rgb(0,0,0);
+}
+
+main #home p {
+    font-size: 2.5rem;
+    width: 80%;
+    margin: 0 auto;
+    color: #fff;
+}
+
+
+/*----#menus----*/
+
+/*--.choice--*/
+
+main #menus .choice {
+    display: flex;
+    justify-content: space-around;
+}
+
+#menus .choice i,
+#menus .choice i {
+    font-size: 4rem;
+    color: #d68427;
+    margin-left: -8px;
+    margin-top: 2px;
+}
+
+main #menus .choice .alcohols {
+    margin-left: 500px;
+}
+
+main #menus .choice .meals {
+    margin-right: 500px;
+}
+
+
+#menus .choice a {
+    background: none;
+    border: 0;
+    box-sizing: border-box;
+    margin: 1em;
+    padding: 1em 2em;
+    box-shadow: inset 0 0 0 2px #FFF;
+    color: #FFF;
+    font-size: inherit;
+    font-weight: 700;
+    position: relative;
+    vertical-align: middle;
+}
+
+#menus .choice a::before,
+#menus .choice a::after {
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.spin {
+    width: 5em;
+    height: 5em;
+    padding: 0;
+}
+
+.spin:hover {
+    color: #ec9430;
+}
+
+.spin::before,
+.spin::after {
+    top: 0;
+    left: 0;
+}
+
+.spin::before {
+    border: 2px solid transparent; 
+}
+
+.spin:hover::before {
+    border-top-color: #ec9430; 
+    border-right-color: #ec9430;
+    border-bottom-color: #ec9430;
+
+    transition:
+    border-top-color 0.15s linear, 
+    border-right-color 0.15s linear 0.10s,
+    border-bottom-color 0.15s linear 0.20s;
+}
+
+.spin::after {
+    border: 0 solid transparent;
+}
+
+.spin:hover::after {
+    border-top: 2px solid #ec9430; 
+    border-left-width: 2px;
+    border-right-width: 2px;
+    transform: rotate(270deg);
+    transition:
+    transform 0.4s linear 0s,
+    border-left-width 0s linear 0.35s;
+}
+
+
+
+.circle {
+    border-radius: 100%;
+    box-shadow: none;
+}
+
+.circle::before,
+.circle::after {
+    border-radius: 100%;
+}
+
+/*-switch-choice-*/
+
+.switch {
+    position: absolute;
+    visibility: hidden;
+}
+
+
+/*--beer & food--*/
+
+main #menus .beer,
+main #menus .food {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+main #menus .beer .whiskey h3 {
+    text-align: left;
+}
+
+main #menus .beer div,
+main #menus .food div {
+    padding: 20px;
+    width: 30%;
+}
+
+main #menus h3 {
+    font-weight: 900;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+main #menus .cards:hover {
+    opacity: 0.7;
+}
+
+main #menus .caps {
+    text-transform: uppercase;
+}
+
+main #menus .point {
+    color: #ec9430;
+}
+
+#menus .drink .beer ul li,
+#menus .eat .food ul .line {
+    margin-top: 10px;
+}
+
+/*----#events----*/
+
+main #events {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+main #events img {
+    padding: 10px;
+}
+
+main #events img, main #events p {
+    width: 400px;
+}
+main #events h3 {
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+/*----#galerie----*/
+
+main #galerie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main #galerie img {
+    width: 400px;
+}
+
+main #galerie img:hover {
+    opacity: 0.5;
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 1200px;
+    }
+}
+
+
+
+/*----#contact----*/
+
+main #contact {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+
+main #contact a {
+    color: #fff;
+}
+
+main #contact i {
+    padding-right: 5px;
+}
+
+main #contact a:hover {
+    color: #ec9430;
+}
+
+main #contact img {
+    width: 150px;
+    height: 150px;
+}
+
+main #contact .place {
+    margin-left: 250px;
+}
+
+main #contact .schedule {
+    margin-right: 250px;
+}
+
+
+/*========================================
+                FOOTER
+=========================================*/
+
+footer {
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    padding: 20px;
+}
+
+footer a {
+    color: #fff;
+}
+
+
+
+/*==================================*/
+/*============RESPONSIVE============*/
+/*==================================*/
+
+@media screen and (max-width: 1024px) {
+    main #contact .schedule {
+        margin-right: 0;
+        padding: 0;
+    }
+    main #contact .place {
+        margin-left: 0;
+        padding: 0;
+    } 
+    main #menus .choice .alcohols {
+        margin-left: 100px;
+    }
+    main #menus .choice .meals {
+        margin-right: 100px;
+    }
+    #events .event {
+        margin-bottom: 40px;
+    }
+    main #menus .beer div, main #menus .food div {
+        width: 100%;
+        text-align: center;
+    }
+    main #menus .beer .whiskey h3 {
+        text-align: center;
+    }
+    #menus .drink .beer ul,
+    #menus .eat .food ul {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    header img {
+        display: none;
+    }
+    header #navigation #navbarText ul .galerie, header #navigation #navbarText ul .events, header #navigation #navbarText ul .contact, header #navigation #navbarText ul .menus
+        {
+        margin: 0;
+    }
+    .nav-link {
+        display: inline;
+    }
+    main #onepageEvents, main #onepageGalerie {
+        padding-top: 60px;
+    }
+    * hr {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    main #home {
+        padding: 200px 0 120px;
+    }
+    main #menus .beer, main #menus .food {
+        
+    }
+}
+
+@media screen and (max-width: 470px) {
+    main #contact .schedule,
+    main #contact .place {
+        width: 100%;
+    }
+    main #contact {
+        flex-wrap: wrap;
+    }
+
+    main #events img,
+    main #events p,
+    main #galerie img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 284px) {
+    main h1 {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 228px) {
+    main h1 {
+        font-size: 3rem;
+    }
+}
